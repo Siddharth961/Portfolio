@@ -35,7 +35,7 @@
 }
 
 .my-main p{
-    width: 50vw;
+    /* width: 50vw; */
     margin-bottom: 4rem;
 }
 
@@ -91,9 +91,6 @@ nav li{
 .landing-container{
     flex-direction: column;
 }
-.landing p{
-    width: 50vw;
-}
 
 
 .landing button{
@@ -123,6 +120,11 @@ nav li{
     min-height: 24vh;
 }
 
+@media screen and (max-width : 410px) {
+    .small-menu{
+        display: none;
+    }
+}
 /* --------About Section------------ */
 .about{
     padding: 4rem 2rem;
