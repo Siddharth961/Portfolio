@@ -62,7 +62,15 @@ a{
     --bs-navbar-toggler-focus-width : none !important;
 }
 
-/* -----------------Utils end------------------*/
+b{
+    color: rgba(0, 0, 0, 0.796);
+}
+
+
+/* -------------------------------Utils end-------------------------------------------*/
+
+
+
 nav{
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.115) !important;
     padding: 1rem !important;
@@ -148,15 +156,18 @@ nav li{
     flex-wrap: wrap;
 }
 .skill{
-    background-color: #E7E7E7;
+    box-sizing: content-box;
+    background-color: white;
     padding: .6rem 1rem;
     border-radius: 4px;
     margin-right: .8rem;
     margin-bottom: .8rem;
-    font-weight: 600;
+    font-weight: 650;
+    border: 2px solid #1E90FF;
+    /* box-shadow: 0px 0px 10px #1e8fffb3; */
 }
 
-/* --------Project section------------  */
+/* --------------------------------Project section--------------------------------------------  */
 .project{
     padding: 4rem 2rem
 }
@@ -175,21 +186,31 @@ nav li{
 .project-img span{
     height: 14rem;
     border: 10px solid #1E90FF;
-    border-radius: 1rem;
+    border-radius: .6rem;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.171);
+    
 }
 .project-img img{
     
     height: 100%;
-    /* max-height: 100%; */
-    width: 18rem;
-    
-    transform: translate(10%,-14%);
+    width: 18rem;    
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.33);
-    border-radius: 1rem;
+    transition-duration: .5s;
 }
 
- .description {
+@media screen and (max-width: 1024px){
+    
+    .project-img img{
+        transform: translate(10%,-14%);
+        border-radius: .6rem;
+    }
+}
+.project-img img:hover{
+    transform: translate(10%,-14%);
+    border-radius: .6rem;
+}
+
+.description {
     min-height: max-content;
     padding-bottom: 2rem;
     
