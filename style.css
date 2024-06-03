@@ -216,7 +216,11 @@ nav li{
     
 }
 
-
+.demo-link{
+    color: #1E90FF;
+    /* font-size: .8rem; */
+    font-weight: 600;
+}
 
 /* ------------Contact------------ */
 #contact{
